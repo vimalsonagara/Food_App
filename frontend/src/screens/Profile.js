@@ -6,7 +6,7 @@ export default function Profile() {
     const fetchUser = async () => {
         try {
 
-            const response = await fetch("/api/MyProfile", {
+            const response = await fetch("https://food-app-4fef.onrender.com/api/MyProfile", {
                 method: 'POST', 
                 headers: {
                     'Content-Type': 'application/json',

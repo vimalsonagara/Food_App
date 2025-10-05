@@ -7,7 +7,7 @@ export default function Signup() {
 
   const handlesubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/createuser", {
+    const response = await fetch("https://food-app-4fef.onrender.com/api/createuser", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
