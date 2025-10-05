@@ -6,7 +6,7 @@ export default function Profile() {
     const fetchUser = async () => {
         try {
 
-            const response = await fetch("http://localhost:5000/api/MyProfile", {
+            const response = await fetch("/api/MyProfile", {
                 method: 'POST', 
                 headers: {
                     'Content-Type': 'application/json',
