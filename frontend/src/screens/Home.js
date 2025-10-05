@@ -11,7 +11,7 @@ export default function Home() {
 
 
   const loaddata = async () => {
-    let response = await fetch("https://food-app-4fef.onrender.com/api/fooddata", {
+    let response = await fetch("/api/fooddata", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -36,8 +36,8 @@ export default function Home() {
       <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" style={{ objectFit: "contain !important" }}>
         <div className="carousel-inner" id="carousel">
           <div className="carousel-caption" style={{ zIndex: "10" }}>
-            <div className="d-flex justify-content-center">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => setsearch(e.target.value)} />
+            <div class="d-flex justify-content-center">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => setsearch(e.target.value)} />
               {/* <button class="btn btn-outline-success text-white bg-success" type="submit">Search</button> */}
             </div>
           </div>

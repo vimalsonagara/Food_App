@@ -17,7 +17,7 @@ export default function () {
         let userEmail = localStorage.getItem("userEmail");
         console.log(localStorage.getItem("userEmail"));
         console.log(data,localStorage.getItem("userEmail"),new Date())
-        try{let response = await fetch("http://localhost:5000/api/orderData", {
+        try{let response = await fetch("/api/orderData", {
             // credentials: 'include',
             // Origin:"http://localhost:3000/login",
             method: 'POST',

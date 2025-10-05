@@ -9,7 +9,7 @@ export default function VerifyOTP() {
     const handleOTPSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch("https://food-app-4fef.onrender.com/api/verifyotp", {
+        const response = await fetch("/api/verifyotp", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
